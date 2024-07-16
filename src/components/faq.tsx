@@ -7,6 +7,37 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+
+const faq: { id: number; question: string; answer: string }[] = [
+  {
+    id: 1,
+    question: "What is NFC technology?",
+    answer:
+      "NFC (Near Field Communication) allows for wireless data transfer between devices.",
+  },
+  {
+    id: 2,
+    question: "How do QR codes work?",
+    answer: "QR codes can be scanned using a smartphone to access information.",
+  },
+  {
+    id: 3,
+    question: "Can I customize the NFC cards?",
+    answer: "Yes, we offer customization options for our NFC cards.",
+  },
+  {
+    id: 4,
+    question: "How can this technology boost my ratings?",
+    answer:
+      "It simplifies the feedback process, encouraging more customers to leave reviews.",
+  },
+  {
+    id: 5,
+    question: "Is there a setup fee?",
+    answer: "No, there is no setup fee for our plans.",
+  },
+];
+
 export const FAQ = () => (
   <div className="w-full py-20 lg:py-40">
     {" "}
@@ -21,7 +52,7 @@ export const FAQ = () => (
             {" "}
             <h4 className="text-3xl md:text-5xl tracking-tighter max-w-xl text-center font-regular">
               {" "}
-              This is the start of something new{" "}
+              Find answers to common questions about our NFC/QR solutions.
             </h4>{" "}
             <p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-xl text-center">
               {" "}
@@ -43,20 +74,11 @@ export const FAQ = () => (
           {" "}
           <Accordion type="single" collapsible className="w-full">
             {" "}
-            {Array.from({ length: 8 }).map((_, index) => (
-              <AccordionItem key={index} value={"index-" + index}>
+            {faq.map((question, index) => (
+              <AccordionItem key={question.id} value={"index-" + index}>
                 {" "}
-                <AccordionTrigger>
-                  {" "}
-                  This is the start of something new{" "}
-                </AccordionTrigger>{" "}
-                <AccordionContent>
-                  {" "}
-                  Managing a small business today is already tough. Avoid
-                  further complications by ditching outdated, tedious trade
-                  methods. Our goal is to streamline SMB trade, making it easier
-                  and faster than ever.{" "}
-                </AccordionContent>{" "}
+                <AccordionTrigger> {question.question}</AccordionTrigger>{" "}
+                <AccordionContent>{question.answer}</AccordionContent>{" "}
               </AccordionItem>
             ))}{" "}
           </Accordion>{" "}

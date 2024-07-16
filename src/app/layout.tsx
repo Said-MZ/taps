@@ -28,10 +28,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
-          <div className="fixed bottom-4 right-4">
+          <div className="fixed bottom-10 left-10 z-50">
             <ModeToggle />
           </div>
+          {children}
           <Footer />
         </ThemeProvider>
       </body>

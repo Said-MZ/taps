@@ -6,10 +6,11 @@ import { Pricing } from "@/components/pricing";
 import { Stats } from "@/components/stats";
 import { Testimonials } from "@/components/testimonial";
 import { Customers } from "@/components/ui/customers";
+import { ModeToggle } from "@/components/ui/mode-toggle";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Hero />
       <Customers />
       <Stats />

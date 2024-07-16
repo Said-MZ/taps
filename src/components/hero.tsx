@@ -2,27 +2,25 @@ import { MoveRight, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => (
-  <div className="w-full py-20 lg:py-40">
+  <div className="w-full py-32 lg:py-40">
     <div className="container mx-auto">
       <div className="grid grid-cols-1 gap-8 items-center md:grid-cols-2">
         <div className="flex gap-4 flex-col">
           <div className="flex gap-4 flex-col">
-            <h1 className="text-5xl md:text-7xl max-w-lg tracking-tighter text-left font-regular">
-              This is the start of something!
+            <h1 className="text-2xl sm:text-3xl lg:text-5xl max-w-lg tracking-tighter text-left font-regular">
+              Transform Your Customer Feedback Experience
             </h1>
-            <p className="text-xl leading-relaxed tracking-tight text-muted-foreground max-w-md text-left">
-              Managing a small business today is already tough. Avoid further
-              complications by ditching outdated, tedious trade methods. Our
-              goal is to streamline SMB trade, making it easier and faster than
-              ever.
+            <p className="text-xs/relaxed sm:text-md/relaxed lg:text-lg/relaxed leading-relaxed tracking-tight text-muted-foreground max-w-md text-left">
+              Empower your business with cutting-edge NFC and QR code technology
+              for seamless ratings and reviews.
             </p>
           </div>
           <div className="flex flex-row gap-4">
-            <Button size="lg" className="gap-4" variant="outline">
+            <Button className="gap-4 max-w-72" variant="outline">
               Jump on a call <PhoneCall className="w-4 h-4" />
             </Button>
-            <Button size="lg" className="gap-4">
-              Sign up here <MoveRight className="w-4 h-4" />
+            <Button className="gap-4 max-w-72">
+              Check our Products <MoveRight className="w-4 h-4" />
             </Button>
           </div>
         </div>

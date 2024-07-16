@@ -9,19 +9,18 @@ export const Pricing = () => (
         <Badge>Pricing</Badge>
         <div className="flex gap-2 flex-col">
           <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl text-center font-regular">
-            Prices that make sense!
+            Affordable Plans for Every Business
           </h2>
           <p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-xl text-center">
-            Managing a small business today is already tough.
+            Choose the perfect plan to elevate your customer feedback.
           </p>
         </div>
         <div className="grid text-left w-full grid-cols-3 lg:grid-cols-4 divide-x pt-20">
           <div className="col-span-3 lg:col-span-1"></div>
           <div className="px-3 py-1 md:px-6 md:py-4  gap-2 flex flex-col">
-            <p className="text-2xl">Startup</p>
+            <p className="text-2xl">Starter</p>
             <p className="text-sm text-muted-foreground">
-              Our goal is to streamline SMB trade, making it easier and faster
-              than ever for everyone and everywhere.
+              Basic NFC cards for small businesses.
             </p>
             <p className="flex flex-col lg:flex-row lg:items-center gap-2 text-xl mt-8">
               <span className="text-4xl">$40</span>
@@ -32,10 +31,9 @@ export const Pricing = () => (
             </Button>
           </div>
           <div className="px-3 py-1 md:px-6 md:py-4 gap-2 flex flex-col">
-            <p className="text-2xl">Growth</p>
+            <p className="text-2xl">Professional</p>
             <p className="text-sm text-muted-foreground">
-              Our goal is to streamline SMB trade, making it easier and faster
-              than ever for everyone and everywhere.
+              Advanced NFC/QR solutions with customization options.
             </p>
             <p className="flex flex-col lg:flex-row lg:items-center gap-2 text-xl mt-8">
               <span className="text-4xl">$40</span>
@@ -48,8 +46,7 @@ export const Pricing = () => (
           <div className="px-3 py-1 md:px-6 md:py-4 gap-2 flex flex-col">
             <p className="text-2xl">Enterprise</p>
             <p className="text-sm text-muted-foreground">
-              Our goal is to streamline SMB trade, making it easier and faster
-              than ever for everyone and everywhere.
+              Comprehensive package for large enterprises.
             </p>
             <p className="flex flex-col lg:flex-row lg:items-center gap-2 text-xl mt-8">
               <span className="text-4xl">$40</span>

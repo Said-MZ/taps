@@ -7,49 +7,37 @@ export const Stats = () => (
         <div className="flex gap-0 flex-col justify-between p-6 border rounded-md">
           <MoveUpRight className="w-4 h-4 mb-10 text-primary" />
           <h2 className="text-4xl tracking-tighter max-w-xl text-left font-regular flex flex-row gap-4 items-end">
-            500.000
-            <span className="text-muted-foreground text-sm tracking-normal">
-              +20.1%
-            </span>
+            100
           </h2>
           <p className="text-base leading-relaxed tracking-tight text-muted-foreground max-w-xl text-left">
-            Monthly active users
-          </p>
-        </div>
-        <div className="flex gap-0 flex-col justify-between p-6 border rounded-md">
-          <MoveDownLeft className="w-4 h-4 mb-10 text-destructive" />
-          <h2 className="text-4xl tracking-tighter max-w-xl text-left font-regular flex flex-row gap-4 items-end">
-            20.105
-            <span className="text-muted-foreground text-sm tracking-normal">
-              -2%
-            </span>
-          </h2>
-          <p className="text-base leading-relaxed tracking-tight text-muted-foreground max-w-xl text-left">
-            Daily active users
-          </p>
-        </div>
-        <div className="flex gap-0 flex-col justify-between p-6 border rounded-md">
-          <MoveUpRight className="w-4 h-4 mb-10 text-success" />
-          <h2 className="text-4xl tracking-tighter max-w-xl text-left font-regular flex flex-row gap-4 items-end">
-            $523.520
-            <span className="text-muted-foreground text-sm tracking-normal">
-              +8%
-            </span>
-          </h2>
-          <p className="text-base leading-relaxed tracking-tight text-muted-foreground max-w-xl text-left">
-            Monthly recurring revenue
+            reviews gathered using our NFC technology.
           </p>
         </div>
         <div className="flex gap-0 flex-col justify-between p-6 border rounded-md">
           <MoveUpRight className="w-4 h-4 mb-10 text-primary" />
           <h2 className="text-4xl tracking-tighter max-w-xl text-left font-regular flex flex-row gap-4 items-end">
-            $1052
-            <span className="text-muted-foreground text-sm tracking-normal">
-              +2%
-            </span>
+            99%
           </h2>
           <p className="text-base leading-relaxed tracking-tight text-muted-foreground max-w-xl text-left">
-            Cost per acquisition
+            clients report improved feedback processes.
+          </p>
+        </div>
+        <div className="flex gap-0 flex-col justify-between p-6 border rounded-md">
+          <MoveUpRight className="w-4 h-4 mb-10 text-success" />
+          <h2 className="text-4xl tracking-tighter max-w-xl text-left font-regular flex flex-row gap-4 items-end">
+            35%
+          </h2>
+          <p className="text-base leading-relaxed tracking-tight text-muted-foreground max-w-xl text-left">
+            boost in online ratings
+          </p>
+        </div>
+        <div className="flex gap-0 flex-col justify-between p-6 border rounded-md">
+          <MoveUpRight className="w-4 h-4 mb-10 text-primary" />
+          <h2 className="text-4xl tracking-tighter max-w-xl text-left font-regular flex flex-row gap-4 items-end">
+            85%
+          </h2>
+          <p className="text-base leading-relaxed tracking-tight text-muted-foreground max-w-xl text-left">
+            of businesses saw immediate results with our solutions.
           </p>
         </div>
       </div>

@@ -12,6 +12,7 @@ import {
 import { Menu, MoveRight, X } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export const Navbar = () => {
   const navigationItems = [
@@ -21,42 +22,42 @@ export const Navbar = () => {
       description: "",
     },
     {
-      title: "Product",
-      description: "Managing a small business today is already tough.",
+      title: "Products",
+      description: "Boost ratings with NFC technology solutions.",
       items: [
         {
-          title: "Reports",
-          href: "/reports",
+          title: "Smart Stand",
+          href: "/smart_stand",
         },
         {
-          title: "Statistics",
-          href: "/statistics",
+          title: "Smart Card",
+          href: "/smart_card",
         },
         {
-          title: "Dashboards",
-          href: "/dashboards",
+          title: "Smart Chip",
+          href: "/smart_chip",
         },
         {
-          title: "Recordings",
-          href: "/recordings",
+          title: "Menus",
+          href: "/Menus",
         },
       ],
     },
     {
       title: "Company",
-      description: "Managing a small business today is already tough.",
+      description: "Revolutionizing feedback with innovative NFC solutions.",
       items: [
         {
           title: "About us",
           href: "/about",
         },
         {
-          title: "Fundraising",
-          href: "/fundraising",
+          title: "Testimonials",
+          href: "/testimonials",
         },
         {
-          title: "Investors",
-          href: "/investors",
+          title: "Customers",
+          href: "/customers",
         },
         {
           title: "Contact us",
@@ -68,7 +69,7 @@ export const Navbar = () => {
 
   const [isOpen, setOpen] = useState(false);
   return (
-    <header className="w-full z-40 fixed top-0 left-0 bg-background">
+    <header className="w-screen z-40 fixed top-0 left-0 bg-gradient-to-b from-background to-transparent backdrop-blur-sm">
       <div className="container relative mx-auto min-h-20 flex gap-4 flex-row lg:grid lg:grid-cols-3 items-center">
         <div className="justify-start items-center gap-4 lg:flex hidden flex-row">
           <NavigationMenu className="flex justify-start items-start">
@@ -77,7 +78,7 @@ export const Navbar = () => {
                 <NavigationMenuItem key={item.title}>
                   {item.href ? (
                     <>
-                      <NavigationMenuLink>
+                      <NavigationMenuLink href={item.href}>
                         <Button variant="ghost">{item.title}</Button>
                       </NavigationMenuLink>
                     </>
@@ -96,7 +97,9 @@ export const Navbar = () => {
                               </p>
                             </div>
                             <Button size="sm" className="mt-10">
-                              Book a call today
+                              <Link href="tel:+962792969742">
+                                Jump on a call
+                              </Link>
                             </Button>
                           </div>
                           <div className="flex flex-col text-sm h-full justify-end">
@@ -121,15 +124,23 @@ export const Navbar = () => {
           </NavigationMenu>
         </div>
         <div className="flex lg:justify-center">
-          <p className="font-semibold">TWBlocks</p>
+          <Link href="/">
+            <p className="sr-only">Taps</p>
+            <Image
+              src="/logo.png"
+              width={40}
+              height={40}
+              alt="taps logo"
+              className="dark:invert"
+            />
+          </Link>
         </div>
         <div className="flex justify-end w-full gap-4">
-          <Button variant="ghost" className="hidden md:inline">
-            Book a demo
+          <Button variant="default" className="hidden md:inline !p-0">
+            <Link href="tel:+962792969742" className="w-full h-full  p-4">
+              Jump on a call
+            </Link>
           </Button>
-          <div className="border-r hidden md:inline"></div>
-          <Button variant="outline">Sign in</Button>
-          <Button>Get started</Button>
         </div>
         <div className="flex w-12 shrink lg:hidden items-end justify-end">
           <Button variant="ghost" onClick={() => setOpen(!isOpen)}>
