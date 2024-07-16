@@ -48,13 +48,12 @@ export const FAQ = () => (
         <div className="flex text-center justify-center items-center gap-4 flex-col">
           {" "}
           <Badge variant="outline">FAQ</Badge>{" "}
-          <div className="flex gap-2 flex-col">
+          <div className="flex gap-2 flex-col max-w-3xl">
             {" "}
-            <h4 className="text-3xl md:text-5xl tracking-tighter max-w-xl text-center font-regular">
-              {" "}
+            <h2 className="text-xl md:text-4xl tracking-tighter font-regular text-center ">
               Find answers to common questions about our NFC/QR solutions.
-            </h4>{" "}
-            <p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-xl text-center">
+            </h2>{" "}
+            <p className="text-xs/relaxed sm:text-md/relaxed lg:text-lg/relaxed leading-relaxed tracking-tight text-muted-foreground">
               {" "}
               Managing a small business today is already tough. Avoid further
               complications by ditching outdated, tedious trade methods. Our
@@ -66,7 +65,7 @@ export const FAQ = () => (
             {" "}
             <Button className="gap-4" variant="outline">
               {" "}
-              Any questions? Reach out <PhoneCall className="w-4 h-4" />{" "}
+              Reach out <PhoneCall className="w-4 h-4" />{" "}
             </Button>{" "}
           </div>{" "}
         </div>{" "}

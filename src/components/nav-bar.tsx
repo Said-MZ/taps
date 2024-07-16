@@ -128,10 +128,10 @@ export const Navbar = () => {
             <p className="sr-only">Taps</p>
             <Image
               src="/logo.png"
-              width={40}
-              height={40}
+              width={38}
+              height={38}
               alt="taps logo"
-              className="dark:invert"
+              className="dark:invert mx-4"
             />
           </Link>
         </div>

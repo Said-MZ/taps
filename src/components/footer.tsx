@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export const Footer = () => {
@@ -6,44 +7,62 @@ export const Footer = () => {
       title: "Home",
       href: "/",
       description: "",
-    },
-    {
-      title: "Product",
-      description: "Managing a small business today is already tough.",
       items: [
         {
-          title: "Reports",
-          href: "/reports",
+          title: "Smart Stand",
+          href: "/smart_stand",
         },
         {
-          title: "Statistics",
-          href: "/statistics",
+          title: "Smart Card",
+          href: "/smart_card",
         },
         {
-          title: "Dashboards",
-          href: "/dashboards",
+          title: "Smart Chip",
+          href: "/smart_chip",
         },
         {
-          title: "Recordings",
-          href: "/recordings",
+          title: "Menus",
+          href: "/Menus",
+        },
+      ],
+    },
+    {
+      title: "Products",
+      description: "Boost ratings with NFC technology solutions.",
+      items: [
+        {
+          title: "Smart Stand",
+          href: "/smart_stand",
+        },
+        {
+          title: "Smart Card",
+          href: "/smart_card",
+        },
+        {
+          title: "Smart Chip",
+          href: "/smart_chip",
+        },
+        {
+          title: "Menus",
+          href: "/Menus",
         },
       ],
     },
     {
       title: "Company",
-      description: "Managing a small business today is already tough.",
+      description: "Revolutionizing feedback with innovative NFC solutions.",
       items: [
         {
           title: "About us",
           href: "/about",
         },
         {
-          title: "Fundraising",
-          href: "/fundraising",
+          title: "Testimonials",
+          href: "/testimonials",
         },
         {
-          title: "Investors",
-          href: "/investors",
+          title: "Customers",
+          href: "/customers",
         },
         {
           title: "Contact us",
@@ -54,25 +73,27 @@ export const Footer = () => {
   ];
 
   return (
-    <div className="w-full py-20 lg:py-40 bg-foreground text-background">
+    <div className="w-full py-20 lg:py-40 bg-primary/20 text-foreground">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div className="flex gap-8 flex-col items-start">
             <div className="flex gap-2 flex-col">
-              <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">
-                TWBlocks™
-              </h2>
-              <p className="text-lg max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
-                Managing a small business today is already tough.
+              <Image
+                alt="taps logo"
+                src="/logo.png"
+                width={100}
+                height={100}
+                className="dark:invert"
+              />
+              <p className="text-lg max-w-lg leading-relaxed tracking-tight text-foreground/75 text-left">
+                Boost ratings with NFC technology solutions.
               </p>
             </div>
             <div className="flex gap-20 flex-row">
-              <div className="flex flex-col text-sm max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
-                <p>1 Tailwind Way</p>
-                <p>Menlo Park</p>
-                <p>CA 94025</p>
+              <div className="flex flex-col text-sm max-w-lg leading-relaxed tracking-tight text-foreground/75 text-left">
+                <p>Amman, Jordan</p>
               </div>
-              <div className="flex flex-col text-sm max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
+              <div className="flex flex-col text-sm max-w-lg leading-relaxed tracking-tight text-foreground/75 text-left">
                 <Link href="/">Terms of service</Link>
                 <Link href="/">Privacy Policy</Link>
               </div>
@@ -102,7 +123,7 @@ export const Footer = () => {
                         href={subItem.href}
                         className="flex justify-between items-center"
                       >
-                        <span className="text-background/75">
+                        <span className="text-foreground/75">
                           {subItem.title}
                         </span>
                       </Link>

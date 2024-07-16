@@ -23,7 +23,7 @@ export const Stats = () => (
           </p>
         </div>
         <div className="flex gap-0 flex-col justify-between p-6 border rounded-md">
-          <MoveUpRight className="w-4 h-4 mb-10 text-success" />
+          <MoveUpRight className="w-4 h-4 mb-10 text-primary" />
           <h2 className="text-4xl tracking-tighter max-w-xl text-left font-regular flex flex-row gap-4 items-end">
             35%
           </h2>

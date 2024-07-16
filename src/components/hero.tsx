@@ -6,7 +6,7 @@ export const Hero = () => (
     <div className="container mx-auto">
       <div className="grid grid-cols-1 gap-8 items-center md:grid-cols-2">
         <div className="flex gap-4 flex-col">
-          <div className="flex gap-4 flex-col">
+          <div className="flex gap-4 flex-col text-center sm:text-left">
             <h1 className="text-2xl sm:text-3xl lg:text-5xl max-w-lg tracking-tighter text-left font-regular">
               Transform Your Customer Feedback Experience
             </h1>
@@ -15,11 +15,14 @@ export const Hero = () => (
               for seamless ratings and reviews.
             </p>
           </div>
-          <div className="flex flex-row gap-4">
-            <Button className="gap-4 max-w-72" variant="outline">
+          <div className="flex flex-col-reverse sm:flex-row gap-4">
+            <Button
+              className="gap-4 w-64 sm:w-auto sm:max-w-72 mx-auto sm:mx-0"
+              variant="outline"
+            >
               Jump on a call <PhoneCall className="w-4 h-4" />
             </Button>
-            <Button className="gap-4 max-w-72">
+            <Button className="gap-4 w-64 sm:w-auto sm:max-w-72 mx-auto sm:mx-0">
               Check our Products <MoveRight className="w-4 h-4" />
             </Button>
           </div>

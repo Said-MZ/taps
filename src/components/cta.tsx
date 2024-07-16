@@ -3,17 +3,17 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 export const CTA = () => (
-  <div className="w-full py-20 lg:py-40 bg-muted">
+  <div className="w-full py-20 lg:py-40">
     <div className="container mx-auto">
       <div className="flex flex-col text-center py-14 gap-4 items-center">
         <div>
           <Badge>Get started!</Badge>
         </div>
-        <div className="flex flex-col gap-2">
-          <h3 className="text-3xl md:text-5xl tracking-tighter max-w-3xl font-regular">
+        <div className="flex flex-col gap-2  max-w-2xl">
+          <h2 className="text-2xl md:text-4xl tracking-tighter  font-regular text-center">
             Unlock Your Business Potential
-          </h3>
-          <p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-3xl">
+          </h2>
+          <p className="text-xs/relaxed sm:text-md/relaxed lg:text-lg/relaxed leading-relaxed tracking-tight text-muted-foreground">
             Managing a small business today is already tough. Avoid further
             complications by ditching outdated, tedious trade methods. Our goal
             is to streamline SMB trade, making it easier and faster than ever.
