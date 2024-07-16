@@ -27,7 +27,7 @@ export const Hero = () => (
             </Button>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-2 gap-2 sm:gap-4">
           <div className="bg-muted rounded-md aspect-square"></div>
           <div className="bg-muted rounded-md row-span-2"></div>
           <div className="bg-muted rounded-md aspect-square"></div>

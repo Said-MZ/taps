@@ -19,12 +19,15 @@ export const CTA = () => (
             is to streamline SMB trade, making it easier and faster than ever.
           </p>
         </div>
-        <div className="flex flex-row gap-4">
-          <Button className="gap-4" variant="outline">
+        <div className="flex flex-col-reverse sm:flex-row gap-4">
+          <Button
+            className="gap-4 w-64 sm:w-auto sm:max-w-72 mx-auto sm:mx-0"
+            variant="outline"
+          >
             Jump on a call <PhoneCall className="w-4 h-4" />
           </Button>
-          <Button className="gap-4">
-            Check our products <MoveRight className="w-4 h-4" />
+          <Button className="gap-4 w-64 sm:w-auto sm:max-w-72 mx-auto sm:mx-0">
+            Check our Products <MoveRight className="w-4 h-4" />
           </Button>
         </div>
       </div>
