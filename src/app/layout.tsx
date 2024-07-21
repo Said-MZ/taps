@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import { Navbar } from "@/components/nav-bar";
 import { Footer } from "@/components/footer";
+import BG from "@/components/ui/bg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,7 +46,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`overflow-x-hidden ${inter.className}`}>
+        <BG />
         <Navbar />
         <ThemeProvider
           attribute="class"
@@ -53,7 +55,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="fixed bottom-10 left-10 z-50">
+          <div className="fixed bottom-5 left-5 sm:bottom-10 sm:left-10 z-50">
             <ModeToggle />
           </div>
           {children}
