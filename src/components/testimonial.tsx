@@ -14,6 +14,30 @@ export const Testimonials = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
+  const feedbacks = [
+    {
+      id: 1,
+      by: "Maen",
+      feedback: "ماشاءالله إشي مرتب ، الله يجزيك الخير.",
+    },
+    {
+      id: 2,
+      by: "Malik",
+      feedback: "ريحت حالي من حمل الكروت الكرتونية 😂 .",
+    },
+    {
+      id: 3,
+      by: "Malik",
+      feedback: "اشي ببيض الوجه الله يوفقكم ويرزقكم ❤️.",
+    },
+    {
+      id: 4,
+      by: "Ali Yasser",
+      feedback:
+        "لا جد مشاء الله عليكم شغل نضيف وجودة كثير حلوه ومرتبه مشاء الله عليكم ثقه والله",
+    },
+  ];
+
   useEffect(() => {
     if (!api) {
       return;
@@ -34,33 +58,24 @@ export const Testimonials = () => {
     <div className="w-full py-20 lg:py-40">
       <div className="container mx-auto">
         <div className="flex flex-col gap-10">
-          <h2 className="text-2xl md:text-4xl tracking-tighter lg:max-w-3xl font-regular text-left">
+          <h2 className="text-2xl tracking-tighter text-left md:text-4xl lg:max-w-3xl font-regular">
             Praised by Businesses for Innovation and Results
           </h2>
           <Carousel setApi={setApi} className="w-full">
             <CarouselContent>
-              {Array.from({ length: 15 }).map((_, index) => (
+              {feedbacks.map((_, index) => (
                 <CarouselItem className="lg:basis-1/2" key={index}>
-                  <div className="bg-muted rounded-md sm:h-full lg:col-span-2 p-6 aspect-video flex justify-between flex-col">
-                    <User className="w-8 h-8 stroke-1" />
+                  <div className="flex flex-col justify-between p-6 rounded-md lg:col-span-2 min-h-46 bg-gradient-to-br from-primary/20 via-primary/10 to-primary/20">
+                    <User className="w-8 h-8 mb-2 stroke-1" />
                     <div className="flex flex-col gap-4">
                       <div className="flex flex-col">
                         <h3 className="text-xl tracking-tight">
-                          Best decision
+                          {feedbacks[index].by}
                         </h3>
-                        <p className="text-muted-foreground max-w-xs text-sm sm:text-base">
-                          Our goal was to streamline SMB trade, making it easier
-                          and faster than ever and we did it together.
+                        <p className="max-w-xs text-sm text-muted-foreground sm:text-base">
+                          {feedbacks[index].feedback}
                         </p>
                       </div>
-                      <p className="flex flex-row gap-2 text-xs sm:text-sm items-center">
-                        <span className="text-muted-foreground">By</span>{" "}
-                        <Avatar className="h-6 w-6">
-                          <AvatarImage src="https://github.com/shadcn.png" />
-                          <AvatarFallback>CN</AvatarFallback>
-                        </Avatar>
-                        <span>John Johnsen</span>
-                      </p>
                     </div>
                   </div>
                 </CarouselItem>

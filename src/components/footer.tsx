@@ -73,11 +73,11 @@ export const Footer = () => {
   ];
 
   return (
-    <div className="w-full py-20 lg:py-40 bg-primary/20 text-foreground">
+    <div className="w-full py-20 lg:py-40 text-foreground bg-gradient-to-t from-primary/20 to-background">
       <div className="container mx-auto">
-        <div className="grid lg:grid-cols-2 gap-10 items-center">
-          <div className="flex gap-8 flex-col items-start">
-            <div className="flex gap-2 flex-col">
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <div className="flex flex-col items-start gap-8">
+            <div className="flex flex-col gap-2">
               <Image
                 alt="taps logo"
                 src="/logo.png"
@@ -85,31 +85,31 @@ export const Footer = () => {
                 height={100}
                 className="dark:invert"
               />
-              <p className="text-lg max-w-lg leading-relaxed tracking-tight text-foreground/75 text-left">
+              <p className="max-w-lg text-lg leading-relaxed tracking-tight text-left text-foreground/75">
                 Boost ratings with NFC technology solutions.
               </p>
             </div>
-            <div className="flex gap-20 flex-row">
-              <div className="flex flex-col text-sm max-w-lg leading-relaxed tracking-tight text-foreground/75 text-left">
+            <div className="flex flex-row gap-20">
+              <div className="flex flex-col max-w-lg text-sm leading-relaxed tracking-tight text-left text-foreground/75">
                 <p>Amman, Jordan</p>
               </div>
-              <div className="flex flex-col text-sm max-w-lg leading-relaxed tracking-tight text-foreground/75 text-left">
+              <div className="flex flex-col max-w-lg text-sm leading-relaxed tracking-tight text-left text-foreground/75">
                 <Link href="/">Terms of service</Link>
                 <Link href="/">Privacy Policy</Link>
               </div>
             </div>
           </div>
-          <div className="grid lg:grid-cols-3 gap-10 items-start">
+          <div className="grid items-start gap-10 lg:grid-cols-3">
             {navigationItems.map((item) => (
               <div
                 key={item.title}
-                className="flex text-base gap-1 flex-col items-start"
+                className="flex flex-col items-start gap-1 text-base"
               >
                 <div className="flex flex-col gap-2">
                   {item.href ? (
                     <Link
                       href={item.href}
-                      className="flex justify-between items-center"
+                      className="flex items-center justify-between"
                     >
                       <span className="text-xl">{item.title}</span>
                     </Link>
@@ -121,7 +121,7 @@ export const Footer = () => {
                       <Link
                         key={subItem.title}
                         href={subItem.href}
-                        className="flex justify-between items-center"
+                        className="flex items-center justify-between"
                       >
                         <span className="text-foreground/75">
                           {subItem.title}
